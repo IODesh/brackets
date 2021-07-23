@@ -3,9 +3,9 @@ module.exports = function check(str, bracketsConfig) {
     return false;
   }
   let count = 0;
-  for(let i = 0; i < str.length / 2; i++) {
-    for (let j = 0; j < bracketsConfig.length; j++) {
-      str = str.replace(bracketsConfig[j].join(''), '');
+  for(let j = 0; j < str.length / 2; j++) {
+    for (let i = 0; i < bracketsConfig.length; i++) {
+      str = str.replace(bracketsConfig[i].join(''), '');
     }
     count++;
   }
