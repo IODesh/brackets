@@ -4,7 +4,7 @@ module.exports = function check(str, bracketsConfig) {
   }
   let length = str.length;
   let count = 0;
-  for(let j = 0; j < length / 2; j++) {
+  for(let j = 0; j < length; j++) {
     for (let i = 0; i < bracketsConfig.length; i++) {
       str = str.replace(bracketsConfig[i].join(''), '');
     }
